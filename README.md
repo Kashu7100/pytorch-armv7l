@@ -18,9 +18,17 @@ export MAX_JOBS=4
 
 ### Compile
 The wheel file will be created in `pytorch/dist/*` after running the following commands.
+* PyTorch
 ```bash
 git clone https://github.com/pytorch/pytorch --recursive && cd pytorch
 git checkout v1.7.0
+git submodule update --init --recursive
+python setup.py bdist_wheel
+```
+* torchvision
+```bash
+git clone https://github.com/pytorch/vision && cd vision
+git checkout v0.8.1
 git submodule update --init --recursive
 python setup.py bdist_wheel
 ```
