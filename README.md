@@ -1,5 +1,5 @@
 # pytorch-armv7l
-PyTorch and torchvision builds for RaspberryPi 4
+PyTorch 1.7.0 and torchvision 0.8.0 builds for RaspberryPi 4 (32bit OS)
 
 ### Dependencies
 
